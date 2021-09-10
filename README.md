@@ -15,3 +15,5 @@ step-6: now head to the from child to parent communication.
 step-7: create a custom event say (changeHost) in the child component using the @Output decorator.
 
 step-8: now use the above said custom event in all those parent components(subscribers) and bind it to parent component methods.
+
+step-9: now emit(call) above said event from the child component.
