@@ -37,6 +37,8 @@ export class CommunicationTwoComponent implements OnInit {
     };
 
     console.log('CommunicationTwoComponent handleClick', this.data_to_be_saved);
+    
+    <!-- calling(emitting) the app(host/parent) component method from the child component using our custom event -->
     this.changeHost.emit(this.data_to_be_saved);
   }
 }
