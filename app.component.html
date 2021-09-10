@@ -1,0 +1,12 @@
+<div class="container">
+    <!-- changeHost is a custom event handled in the app(host-parent) component and called form the communication(child) component -->
+    <app-communication-two 
+        first_name="{{ data_to_be_saved.first_name }}"
+        last_name="{{ data_to_be_saved.last_name }}"
+        email="{{ data_to_be_saved.email }}"
+        (changeHost)="handleChildEvent($event)" 
+    >
+    </app-communication-two>
+
+    <router-outlet></router-outlet>
+</div>
